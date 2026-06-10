@@ -6,6 +6,10 @@ This repository contains my personal desktop configuration focused on performanc
 
 ---
 
+## Screenshots
+
+![Desktop Screenshot](screenshots/desktop.png)
+
 # System Information
 
 ## Operating System
