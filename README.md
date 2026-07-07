@@ -1,174 +1,163 @@
 # TryDkg's Dotfiles
 
-Personal Linux dotfiles and configuration files for my daily setup.
+Personal Linux desktop configuration built for a fast, keyboard-driven workflow on Wayland.
 
-This repository contains my personal desktop configuration focused on performance, gaming, workflow optimization and Wayland.
-
----
-
-## Screenshots
-
-![Desktop Screenshot](screenshots/desktop.png)
-
-# System Information
-
-## Operating System
-
-* CachyOS (Arch-based)
-
-## Desktop Environment / WM
-
-* Niri (Wayland compositor)
-
-## Terminal
-
-* Alacritty
-
-## Shell
-
-* Bash
-
-## Display Server
-
-* Wayland
-
-## Hardware
-
-CPU:
-
-```text
-AMD Ryzen 5 5600
-```
-
-GPU:
-
-```text
-AMD Radeon RX 9060 XT 16GB
-```
-
-RAM:
-
-```text
-32GB DDR4 3600MT/s
-```
-
-Monitor:
-
-```text
-1920x1080 180Hz
-```
+This repository contains my daily configuration for **CachyOS**, **Niri**, and **Noctalia Shell**, including modular configuration files, application rules, workspace automation, gaming tweaks, and desktop customization.
 
 ---
 
-# Repository Structure
+# Screenshots
 
-```text
-dotfiles/
+## Noctalia V5
 
-├── niri/
-│   ├── config.kdl
-│   └── cfg/
-│       ├── animation.kdl
-│       ├── autostart.kdl
-│       ├── display.kdl
-│       ├── input.kdl
-│       ├── keybinds.kdl
-│       ├── layout.kdl
-│       ├── misc.kdl
-│       └── rules.kdl
+![Desktop](screenshots/desktop-noctalia-v5.png)
 
-└── README.md
-```
+## Previous Setup
+
+![Previous Desktop](screenshots/desktop.png)
+
+---
+
+# Environment
+
+| Component | Value |
+|-----------|-------|
+| OS | CachyOS (Arch Linux) |
+| Compositor | Niri |
+| Shell | Bash |
+| Desktop | Noctalia Shell V5 |
+| Terminal | Alacritty |
+| Display Server | Wayland |
+
+---
+
+# Hardware
+
+| Component | Specification |
+|-----------|---------------|
+| CPU | AMD Ryzen 5 5600 |
+| GPU | AMD Radeon RX 9060 XT 16GB |
+| RAM | 32 GB DDR4 |
+| Monitor | 1920×1080 • 180 Hz |
 
 ---
 
 # Features
 
-## Niri Configuration
-
-* Modular KDL configuration structure
-* Separate configuration files for maintainability
-* Workspace animations
-* Blur effects
-* Rounded corners
-* Custom keybind workflow
-* Wayland-first configuration
-
-## Workflow
-
-* Noctalia Shell integration
-* Alacritty based workflow
-* Gaming focused setup
-* Multi-language keyboard layout
-* Optimized for keyboard driven navigation
-
-## Performance Related Configuration
-
-* CachyOS Bore kernel
-* AMDGPU + Mesa stack
-* Wayland environment variables
-* Performance oriented setup
+- Modular Niri configuration
+- Noctalia Shell integration
+- Wayland-first desktop
+- Keyboard-driven workflow
+- Workspace automation
+- Steam workspace rules
+- Application-specific rules
+- Optimized animations
+- Gaming-oriented desktop
+- Performance-focused configuration
 
 ---
 
-# Installed / Used Software
+# Repository Structure
+
+```
+niri/
+├── config.kdl
+└── cfg/
+    ├── animation.kdl
+    ├── apps.kdl
+    ├── autostart.kdl
+    ├── display.kdl
+    ├── input.kdl
+    ├── keybinds.kdl
+    ├── layout.kdl
+    ├── misc.kdl
+    ├── noctalia.kdl
+    ├── rules.kdl
+    └── steam.kdl
+
+screenshots/
+```
+
+---
+
+# Configuration Modules
+
+| Module | Purpose |
+|---------|---------|
+| animation.kdl | Window animations |
+| apps.kdl | Application rules |
+| autostart.kdl | Startup applications |
+| display.kdl | Monitor configuration |
+| input.kdl | Keyboard and mouse |
+| keybinds.kdl | Keyboard shortcuts |
+| layout.kdl | Workspace layout |
+| misc.kdl | General settings |
+| noctalia.kdl | Noctalia integration |
+| rules.kdl | Window rules |
+| steam.kdl | Steam workspace behavior |
+
+---
+
+# Installed Software
 
 ## Desktop
 
-* Niri
-* Noctalia Shell
-* SDDM
+- Niri
+- Noctalia Shell
+- SDDM
 
 ## Applications
 
-* Firefox
-* Vesktop
-* Spotify
-* Nautilus
-* AyuGram
+- Firefox
+- Vesktop
+- Spotify
+- Nautilus
+- AyuGram Desktop
 
 ## Gaming
 
-* Steam
-* Proton
-* Linux gaming environment
+- Steam
+- Proton
+- Mesa
+- AMDGPU
+- MangoHud
 
 ---
 
 # Installation
 
-Clone repository:
+Clone the repository:
 
 ```bash
 git clone https://github.com/TryDkg/TryDkg-s-dotfiles.git
 ```
 
-Copy files manually:
+Copy the configuration:
 
 ```bash
 cp -r niri ~/.config/
 ```
 
-Or create symlinks if preferred.
+Reload Niri or log in again.
 
 ---
 
 # Goals
 
-This repository exists for:
+This repository serves as:
 
-* Backup
-* Learning Git / GitHub
-* Sharing configuration files
-* Tracking setup changes over time
-* Building technical portfolio
+- Daily desktop configuration
+- Backup
+- Linux experimentation
+- Git version control practice
+- Technical portfolio
 
 ---
 
-# Notes
+# Philosophy
 
-These configurations are built specifically for my workflow.
-
-Things may break.
-
-That is part of Linux.
+- Fast
+- Minimal
+- Keyboard-first
+- Wayland-native
+- Performance-oriented
