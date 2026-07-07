@@ -1,3 +1,11 @@
+![OS](https://img.shields.io/badge/OS-CachyOS-blue)
+
+![WM](https://img.shields.io/badge/WM-Niri-green)
+
+![Shell](https://img.shields.io/badge/Shell-Fish-orange)
+
+![Wayland](https://img.shields.io/badge/Display-Wayland-purple)
+
 # TryDkg's Dotfiles
 
 Personal Linux desktop configuration built for a fast, keyboard-driven workflow on Wayland.
