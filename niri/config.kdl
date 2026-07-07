@@ -6,6 +6,9 @@ include "./cfg/display.kdl"
 include "./cfg/layout.kdl"
 include "./cfg/rules.kdl"
 include "./cfg/misc.kdl"
+include "./cfg/apps.kdl"
+include "./cfg/steam.kdl"
+include "./cfg/noctalia.kdl"
 output "HDMI-A-1" {
     mode "1920x1080@179.998"
 }

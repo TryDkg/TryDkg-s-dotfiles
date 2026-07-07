@@ -1,15 +1,30 @@
 layout {
+    // ======================================================
+    // GENERAL
+    // ======================================================
+
     gaps 14
 
     center-focused-column "never"
 
     background-color "transparent"
 
+    struts {}
+
+    // ======================================================
+    // COLUMN PRESETS
+    // ======================================================
+
     preset-column-widths {
-        proportion 0.33333
-        proportion 0.5
-        proportion 0.66667
+        proportion 0.33
+        proportion 0.50
+        proportion 0.66
+        proportion 0.75
     }
+
+    // ======================================================
+    // FOCUS RING
+    // ======================================================
 
     focus-ring {
         width 3
@@ -18,82 +33,21 @@ layout {
         inactive-color "#313244"
     }
 
+    // ======================================================
+    // BORDER
+    // ======================================================
+
     border {
         width 0
-    }
-
-    struts {}
-}
-
-blur {
-    passes 4
-    offset 2.8
-    noise 0.015
-    saturation 1.15
-}
-
-animations {
-    workspace-switch {
-        spring damping-ratio=1.0 stiffness=850 epsilon=0.0001
-    }
-
-    horizontal-view-movement {
-        spring damping-ratio=1.0 stiffness=900 epsilon=0.0001
-    }
-
-    window-open {
-        duration-ms 150
-    }
-
-    window-close {
-        duration-ms 130
     }
 }
 
 overview {
-    zoom 0.65
+    zoom 0.68
 
     backdrop-color "#11111bdd"
 
     workspace-shadow {
         off
     }
-}
-
-window-rule {
-    geometry-corner-radius 16
-
-    clip-to-geometry true
-
-    background-effect {
-        blur true
-        xray false
-    }
-}
-
-layer-rule {
-    match namespace="^noctalia-(background|launcher-overlay|dock|panel)-.*$"
-
-    background-effect {
-        blur true
-        xray false
-    }
-}
-
-window-rule {
-    match app-id="^zoom$"
-
-    open-floating true
-}
-
-window-rule {
-    match app-id="^org.gnome.Nautilus$"
-
-    default-column-width { proportion 0.55; }
-}
-
-window-rule {
-    match app-id="^Alacritty$"
-
-    default-column-width { proportion 0.5; }
 }

@@ -1,6 +1,27 @@
-spawn-sh-at-startup "sleep 2 && dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=niri"
+// ==================== ENVIRONMENT ====================
 
-spawn-sh-at-startup "sleep 1 && qs -c noctalia-shell"
-spawn-sh-at-startup "sleep 3 && ~/.local/bin/vesktop-wayland"
-spawn-sh-at-startup "sleep 5 && flatpak run com.ayugram.desktop"
-spawn-sh-at-startup "sleep 7 && spotify"
+// Передаём переменные окружения systemd.
+// Должно запускаться самым первым.
+spawn-sh-at-startup "dbus-update-activation-environment --systemd WAYLAND_DISPLAY DISPLAY XDG_CURRENT_DESKTOP=niri XDG_SESSION_TYPE=wayland"
+
+// ==================== NOCTALIA V5 ====================
+
+// Запуск оболочки
+spawn-at-startup "noctalia"
+
+// ==================== APPLICATIONS ====================
+
+// Discord
+spawn-sh-at-startup "sleep 2 && ~/.local/bin/vesktop-wayland"
+
+// Telegram
+spawn-sh-at-startup "sleep 3 && flatpak run com.ayugram.desktop"
+
+// Spotify
+spawn-sh-at-startup "sleep 4 && spotify"
+
+// Steam
+spawn-sh-at-startup "sleep 8 && steam -silent"
+
+// Wallpaper
+spawn-at-startup "waypaper" "--restore"

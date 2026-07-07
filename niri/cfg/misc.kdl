@@ -1,25 +1,60 @@
-    prefer-no-csd
-    screenshot-path null
+// ======================================================
+// GENERAL
+// ======================================================
 
-    environment {
-        ELECTRON_OZONE_PLATFORM_HINT "auto"
-        QT_QPA_PLATFORM "wayland"
-        QT_QPA_PLATFORMTHEME "gtk3"
-        QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
-        XDG_CURRENT_DESKTOP "niri"
-        XDG_SESSION_TYPE "wayland"
-    }
+prefer-no-csd
 
-    cursor {
-        xcursor-theme "capitaine-cursors"
-        xcursor-size 24
-    }
+screenshot-path null
 
-    debug {
-        // Allows notification actions and window activation from Noctalia.
-        honor-xdg-activation-with-invalid-serial
-    }
+// ======================================================
+// ENVIRONMENT
+// ======================================================
 
-    hotkey-overlay {
-       skip-at-startup
-    }
+environment {
+
+    // Electron
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+
+    // Qt
+    QT_QPA_PLATFORM "wayland"
+    QT_QPA_PLATFORMTHEME "gtk3"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+
+    // Session
+    XDG_CURRENT_DESKTOP "niri"
+    XDG_SESSION_TYPE "wayland"
+
+    // Mozilla
+    MOZ_ENABLE_WAYLAND "1"
+
+    // SDL
+    SDL_VIDEODRIVER "wayland"
+
+    // Java
+    _JAVA_AWT_WM_NONREPARENTING "1"
+}
+
+// ======================================================
+// CURSOR
+// ======================================================
+
+cursor {
+    xcursor-theme "capitaine-cursors"
+    xcursor-size 24
+}
+
+// ======================================================
+// DEBUG
+// ======================================================
+
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
+
+// ======================================================
+// HOTKEY OVERLAY
+// ======================================================
+
+hotkey-overlay {
+    skip-at-startup
+}
