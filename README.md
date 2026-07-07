@@ -24,7 +24,7 @@ This repository contains my daily configuration for **CachyOS**, **Niri**, and *
 |-----------|-------|
 | OS | CachyOS (Arch Linux) |
 | Compositor | Niri |
-| Shell | Bash |
+| Shell | Fish |
 | Desktop | Noctalia Shell V5 |
 | Terminal | Alacritty |
 | Display Server | Wayland |
@@ -108,19 +108,11 @@ screenshots/
 
 ## Applications
 
-- Firefox
+- Florp
 - Vesktop
 - Spotify
 - Nautilus
 - AyuGram Desktop
-
-## Gaming
-
-- Steam
-- Proton
-- Mesa
-- AMDGPU
-- MangoHud
 
 ---
 
